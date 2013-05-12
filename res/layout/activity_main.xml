@@ -8,23 +8,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:padding="5dp"
-        android:text="@string/hello_world"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <FrameLayout
+    <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true" >
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
 
         <Button
             android:id="@+id/button"
@@ -32,117 +23,127 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="@string/button" />
-    </FrameLayout>
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:id="@+id/LinearLayout04"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
-        android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:padding="5dp" >
 
-        <FrameLayout
-            android:id="@+id/FrameLayout03"
+        <TextView
+            android:id="@+id/TextView04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:paddingBottom="10dp" >
+            android:layout_marginTop="16dp"
+            android:text="Browser"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="44dp"
-                android:text="Launch" />
-
-            <TextView
-                android:id="@+id/TextView03"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginTop="16dp"
-                android:text="Contacts"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="20sp" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/FrameLayout02"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingBottom="10dp" >
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="44dp"
-                android:text="Launch" />
-
-            <TextView
-                android:id="@+id/TextView02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginTop="16dp"
-                android:text="Calendar"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="20sp" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/FrameLayout01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingBottom="10dp" >
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="44dp"
-                android:text="Launch" />
-
-            <TextView
-                android:id="@+id/TextView01"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginTop="16dp"
-                android:text="Wifi Settings"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="20sp" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/FrameLayout04"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingBottom="10dp" >
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="44dp"
-                android:text="Launch" />
-
-            <TextView
-                android:id="@+id/TextView04"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_marginTop="16dp"
-                android:text="Browser"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="20sp" />
-        </FrameLayout>
+            android:text="Launch" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout04"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Wifi Settings"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="Launch" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout01"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Calendar"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="Launch" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout03"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Contacts"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="Launch" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LinearLayout04"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:text="@string/hello_world"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:src="@color/divider" />
 
 </RelativeLayout>

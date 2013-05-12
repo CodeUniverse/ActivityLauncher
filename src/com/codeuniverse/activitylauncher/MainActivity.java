@@ -76,7 +76,7 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 			}
 			});
-		button3 = (Button) findViewById(R.id.button3);
+		button3 = (Button) findViewById(R.id.Button02);
 		button3.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 
